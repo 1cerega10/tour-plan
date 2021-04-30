@@ -1,4 +1,4 @@
-# tur-plan
+# tour-plan
 
 Tour Plan
 
