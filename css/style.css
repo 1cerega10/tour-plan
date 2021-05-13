@@ -612,16 +612,21 @@ h1, p {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  fill: #fff;
+  fill-opacity: 0.8;
+  transition: 0.2s;
+}
+
+.slider-button:hover {
+  fill: #EC1F46;
 }
 
 .slider-button--next {
   right: 18px;
-  background-image: url(../img/slide/arrow-next.svg);
 }
 
 .slider-button--prev {
   left: 18px;
-  background-image: url(../img/slide/arrow-prev.svg);
 }
 
 .booking {
@@ -636,7 +641,7 @@ h1, p {
 .booking__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .booking__price {
@@ -656,7 +661,7 @@ h1, p {
 
 .booking__per-room {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
 }
 
 .booking__room {
@@ -679,7 +684,7 @@ h1, p {
 .booking__call-center {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 
 .booking__heading {

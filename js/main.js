@@ -14,4 +14,6 @@ const swiper = new Swiper(".swiper-container", {
   autoplay: {
     delay: 3000,
   },
+  spaceBetween: 20,
+  autoHeight: true,
 });

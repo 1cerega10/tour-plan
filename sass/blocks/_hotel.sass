@@ -82,6 +82,11 @@
 .slider
     width: 728px
 
+
+ 
+
+
+
     &-button
         position: absolute
         top: 50%
@@ -95,14 +100,19 @@
         background-position: center
         background-size: 10px
         background-color: transparent
+        fill:#fff
+        fill-opacity: 0.8
+        transition: 0.2s
+        &:hover
+            fill: $primary
 
         &--next
             right: 18px
-            background-image: url(../img/slide/arrow-next.svg)
+          
  
         &--prev
             left: 18px
-            background-image: url(../img/slide/arrow-prev.svg)
+        
 
 .booking
     background-color: $dark
@@ -115,7 +125,7 @@
     &__info
         display: flex
         justify-content: space-between
-        margin-bottom: 9px
+        margin-bottom: 5px
 
 
     &__price
@@ -129,7 +139,7 @@
         line-height: 33px
     &__per-room
         font-size: 12px
-        line-height: 16px
+        line-height: 14px
     &__room
         margin-top: 4px
        
@@ -146,7 +156,7 @@
     &__call-center
         display: flex
         justify-content: space-between
-        margin-bottom: 17px
+        margin-bottom: 19px
     &__heading
         font-style: normal
         font-weight: 600
