@@ -599,6 +599,19 @@ h1, p {
   width: 728px;
 }
 
+.slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+}
+
+.slider .swiper-slide__img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .slider-button {
   position: absolute;
   top: 50%;
