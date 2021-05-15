@@ -17,3 +17,11 @@ const swiper = new Swiper(".swiper-container", {
   spaceBetween: 20,
   autoHeight: true,
 });
+
+ymaps.ready(init);
+function init() {
+  let myMap = new ymaps.Map("map", {
+    center: [7.839483397658993, 98.30119763555001],
+    zoom: 15,
+  });
+}

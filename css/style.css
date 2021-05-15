@@ -738,7 +738,8 @@ h1, p {
 .map {
   width: 347px;
   height: 213px;
-  background-color: green;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
