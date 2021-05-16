@@ -2,12 +2,13 @@
     .container 
         max-width: 960px
 
-    .slider
-        width: 590px
+    .hotel-slider
+        width: 100%
     
 @media (max-width: 992px)
 
-    .container
+    .container, 
+    .newsletter-wrapper
         max-width: 700px
         width: 92%
 
@@ -17,10 +18,10 @@
     .navbar
         &-top
             padding-top: 30px
-            padding-bottom: 30px
+            padding-bottom: 31px
 
         &__search
-            margin-left: auto
+            margin-left: 47px
 
         &__buttom
             padding-top: 20px
@@ -30,12 +31,26 @@
         &__input
             width: 340px
     .nav 
-
+        &__list
+            justify-content: flex-start
+        &__item
+            margin-left: 28px     
+          
+            &:first-child
+                margin-left: 13px
+        &__link
+            padding: 20px 0
+            font-size: 12px
+    .rating
+        margin-top: 5px        
+                
         &__link
             padding: 23px 0
             font-size: 12px
             line-height: 18px
     .hotel
+        padding-top: 17px 
+        padding-bottom: 58px
         &-grid
             flex-direction: column
 
@@ -47,16 +62,19 @@
 
         .booking
             width: 340px
+            padding: 28px 23px 30px 22px
     .slider
         width: 100%
 
     .map
         width: 340px
+    .newsletter-wrapper
+        margin: -4px auto
     
-
 @media (max-width: 768px)
 
-    .container
+    .container,
+    .newsletter-wrapper
         max-width: 576px
 
     .navbar
@@ -117,7 +135,12 @@
         .swiper-slide
             height: 350px
 
-
+    .newsletter
+        &-wrapper
+            flex-direction: column
+            align-items: flex-start
+        &__title
+            margin-bottom: 37px
 @media  ( max-width: 576px )
     .logo
         width: 99px
@@ -128,5 +151,10 @@
 
         &__slider
             margin-bottom: 20px
-
+    .newsletter
+        padding: 76px 0 83px 0
+        &__title
+            margin-bottom: 37px
+    .subscribe
+        width: 100%
     
