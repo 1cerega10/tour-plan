@@ -953,6 +953,7 @@ h1, h2, h3, ul, p {
   text-align: justify;
   margin: auto;
   overflow: hidden;
+  z-index: 1;
 }
 
 .activites {
