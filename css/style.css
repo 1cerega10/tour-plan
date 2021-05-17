@@ -980,6 +980,7 @@ h1, h2, h3, ul, p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-end;
   width: 255px;
   height: 255px;
   border-radius: 6px;
@@ -1011,7 +1012,6 @@ h1, h2, h3, ul, p {
 }
 
 .card__title {
-  margin-top: auto;
   margin-left: 0;
   margin-bottom: 18px;
   color: #fff;
@@ -1153,6 +1153,9 @@ h1, h2, h3, ul, p {
   .activites__card {
     margin-bottom: 20px;
   }
+  .activites__card:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
   .card {
     height: 256px;
     width: 339px;
@@ -1289,6 +1292,12 @@ h1, h2, h3, ul, p {
   }
   .card {
     width: 100%;
+  }
+  .card:nth-last-child(-n+2) {
+    margin-bottom: 20px;
+  }
+  .card:nth-last-child(-n+1) {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

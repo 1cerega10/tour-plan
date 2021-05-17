@@ -97,6 +97,9 @@
             flex-wrap: wrap
         &__card
             margin-bottom: 20px
+        &__card:nth-last-child(-n+2)
+            margin-bottom: 0
+            
     .card
         height: 256px
         width: 339px
@@ -226,3 +229,7 @@
             line-height: 23px
     .card
         width: 100%
+    .card:nth-last-child(-n+2)
+            margin-bottom: 20px
+    .card:nth-last-child(-n+1)
+            margin-bottom: 0
