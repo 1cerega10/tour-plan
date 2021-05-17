@@ -986,6 +986,11 @@ h1, h2, h3, ul, p {
   border-radius: 6px;
   overflow: hidden;
   padding: 24px 26px;
+  transition: 0.1s;
+}
+
+.card:hover {
+  transform: scale(1.08, 1.08);
 }
 
 .card::before {

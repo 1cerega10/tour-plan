@@ -1,5 +1,6 @@
 .activites
     padding: 60px 0 98px 0
+    
     &__title
         font-weight: bold
         font-size: 24px
@@ -20,6 +21,10 @@
     border-radius: 6px
     overflow: hidden
     padding: 24px 26px
+    transition: 0.1s
+    &:hover
+        transform: scale(1.08, 1.08)
+   
     &::before
         content: ''
         position: absolute
@@ -29,6 +34,7 @@
         bottom: 0
         background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
         z-index: -1
+   
     &__img
         position: absolute
         width: 100%
