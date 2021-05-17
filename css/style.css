@@ -1267,7 +1267,7 @@ h1, h2, h3, ul, p {
   }
   .card {
     height: 220px;
-    width: 260px;
+    width: 49%;
   }
 }
 
