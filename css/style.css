@@ -1272,20 +1272,37 @@ h1, h2, h3, ul, p {
 }
 
 @media (max-width: 576px) {
+  .container {
+    width: 87%;
+  }
   .logo {
     width: 99px;
   }
+  .hotel {
+    padding-top: 3px;
+  }
+  .hotel-info {
+    margin-bottom: 18px;
+  }
   .hotel .swiper-slide {
-    height: 250px;
+    height: 190px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+    height: 180px;
+  }
+  .booking__text {
+    font-size: 11px;
   }
   .newsletter {
-    padding: 76px 0 83px 0;
+    padding: 12px 0 81px 0;
   }
-  .newsletter__title {
+  .newsletter-title {
+    font-size: 21px;
     margin-bottom: 37px;
+  }
+  .newsletter-title__strong {
+    font-size: 31px;
   }
   .subscribe {
     width: 100%;
@@ -1295,14 +1312,32 @@ h1, h2, h3, ul, p {
     font-size: 18px;
     line-height: 23px;
   }
+  .reviews-slider__profile {
+    margin-top: -48px;
+  }
+  .reviews-slider__text {
+    height: auto;
+  }
+  .activites {
+    padding-top: 25px;
+  }
+  .activites__title {
+    font-size: 18px;
+    margin-bottom: 33px;
+  }
   .card {
+    flex-direction: column;
     width: 100%;
+    height: 255px;
   }
   .card:nth-last-child(-n+2) {
     margin-bottom: 20px;
   }
   .card:nth-last-child(-n+1) {
     margin-bottom: 0;
+  }
+  .card:nth-child(2n) {
+    order: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
