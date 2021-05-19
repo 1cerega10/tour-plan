@@ -1,0 +1,42 @@
+.packages
+    &__title
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        color: #333
+    &-grid
+        
+    .card
+        &__big
+            width: 720px
+            display: grid
+            grid-column: span 2
+            grid-template-columns: repeat(2, 1fr)
+            border-radius:  8px
+            overflow: hidden
+            &-name
+                color: $light
+                font-weight: bold
+                font-size: 18px
+                line-height: 23px
+                margin-bottom: 27px
+            &-description
+                color: $light
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 160.6%
+            &-img
+                display: block
+                width: 360px
+                height: 500px
+            &-wrapper
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                background-color: $dark
+                width: 360px
+                height: 500px
+                padding: 46px 21px 30px 44px

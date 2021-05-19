@@ -757,6 +757,56 @@ h1, h2, h3, ul, p {
   background-color: #686868;
 }
 
+.packages__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.packages .card__big {
+  width: 720px;
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages .card__big-name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 27px;
+}
+
+.packages .card__big-description {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.packages .card__big-img {
+  display: block;
+  width: 360px;
+  height: 500px;
+}
+
+.packages .card__big-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0A223D;
+  width: 360px;
+  height: 500px;
+  padding: 46px 21px 30px 44px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px;
