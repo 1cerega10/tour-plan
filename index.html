@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best tour plan - Hotel Booking</title>
+    <link rel="icon" href="./img/Best-tour-plan-ico.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -12,28 +13,28 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=136268a5-3dbd-48f9-82c0-854b36c853a0&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#!" class="logo">
             <img src="./img/logo-gorizont.svg" alt="Logo: Best tour plan" class="logo__img" />
           </a>
-          <form action="#!" class="search navbar__search">
+          <form action="#!" class="search navbar__search navbar__search--mobile_hiden">
             <input type="text" class="search__input" placeholder="Search Location" />
             <button class="search__button">
               <img src="./img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#!" class="user navbar__user">
+          <a href="#!" class="user navbar__user navbar__user--mobile_hiden">
             <img src="./img/avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
 
           <!-- /.user -->
           <button class="menu-button navbar-top__menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
+            <span class="menu-button__line "></span>
+            <span class="menu-button__line "></span>
+            <span class="menu-button__line "></span>
           </button>
         </div>
         <!-- /.navbar-top -->
@@ -43,13 +44,27 @@
         <div class="container">
           <nav class="nav navbar__nav">
             <ul class="nav__list">
-              <li class="nav__item"><a href="#!" class="nav__link">All Deals</a></li>
-              <li class="nav__item"><a href="#!" class="nav__link">Hotels</a></li>
-              <li class="nav__item"><a href="#!" class="nav__link">Activities</a></li>
-              <li class="nav__item"><a href="#!" class="nav__link">Hotel Day Packages</a></li>
-              <li class="nav__item"><a href="#!" class="nav__link">Restaurants</a></li>
-              <li class="nav__item"><a href="#!" class="nav__link">Events</a></li>
-              <li class="nav__item"><a href="#!" class="nav__link">Rodrigues</a></li>
+              <li class="nav__item nav__item--mobile_active">
+                <a href="#!" class="user navbar__user">
+                  <img src="./img/avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+                  <span class="user__name user__name--light">Nathan</span>
+                </a>
+              </li>
+              <li class="nav__item nav__item--mobile_active">
+                <form action="#!" class="search navbar__search navbar__search--mobile_active">
+                  <input type="text" class="search__input" placeholder="Search Location" />
+                  <button class="search__button">
+                    <img src="./img/search.svg" alt="Icon: search" />
+                  </button>
+                </form>
+              </li>
+              <li class="nav__item nav__item--mobile"><a href="#!" class="nav__link nav__link--mobile_active">All Deals</a></li>
+              <li class="nav__item nav__item--mobile"><a href="#!" class="nav__link nav__link--mobile_active">Hotels</a></li>
+              <li class="nav__item nav__item--mobile"><a href="#!" class="nav__link nav__link--mobile_active">Activities</a></li>
+              <li class="nav__item nav__item--mobile"><a href="#!" class="nav__link nav__link--mobile_active">Hotel Day Packages</a></li>
+              <li class="nav__item nav__item--mobile"><a href="#!" class="nav__link nav__link--mobile_active">Restaurants</a></li>
+              <li class="nav__item nav__item--mobile"><a href="#!" class="nav__link nav__link--mobile_active">Events</a></li>
+              <li class="nav__item nav__item--mobile"><a href="#!" class="nav__link nav__link--mobile_active">Rodrigues</a></li>
             </ul>
           </nav>
         </div>
@@ -172,7 +187,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <section class="packages">
+    <section class="packages" style="display: none">
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
 

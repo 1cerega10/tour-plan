@@ -39,3 +39,9 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   spaceBetween: 20,
   autoHeight: true,
 });
+
+let menuButton = document.querySelector(".menu-button");
+  menuButton.addEventListener("click", function () {
+  document.querySelector(".navbar__buttom").classList.toggle("navbar__buttom--active");
+  document.querySelector("body").classList.toggle("lock");
+});
