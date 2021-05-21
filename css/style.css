@@ -1414,6 +1414,11 @@ a {
       flex-basis: 49%;
 }
 
+.footer__input:focus {
+  outline: 2px solid #EC1F46;
+  outline-offset: 1px;
+}
+
 .footer__message {
   height: 123px;
   background-color: #fff;
