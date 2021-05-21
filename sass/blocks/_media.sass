@@ -8,8 +8,6 @@
         width: 220px
         height: 220px
 
-    .
-
 @media (max-width: 992px)
 
     .container, 
@@ -168,15 +166,18 @@
             justify-content: center
         &__buttom
             position: fixed
-            left: 0
-            right: 0
+            top: 67px
+            right: -100%
             bottom: 0
-            display: none  
             padding-top: 30px 
             transition: 0.5s 
             &--active
                 display: block
                 top: 67px
+                overflow: auto
+                right: 0
+                width: 100%
+               
         .nav
             &__list
                 flex-direction: column
@@ -184,10 +185,15 @@
                 margin-bottom: 20px
                 &--mobile
                     margin-left: 0
+                    &:nth-last-child(-n+1)
+                        margin-bottom: 0
+                        
                     &_active
                         display: block
                         margin-left: auto
                         margin-right: auto
+                        width: 290px
+
             &__link
                 &--mobile
                     &_active
