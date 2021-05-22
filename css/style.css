@@ -1505,6 +1505,12 @@ button:hover {
 .footer__bottom-link {
   color: #fff;
   font-size: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__bottom-link:hover {
+  color: #ec1f46;
 }
 
 .footer__bottom-pay {
