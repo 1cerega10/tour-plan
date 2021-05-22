@@ -3,9 +3,10 @@
     color: $light
     padding: 108px 0 46px
     &-wrapper
+        margin-bottom: 95px
         display: grid
         grid-template-columns: repeat(4, minmax(min-content, 1fr))
-        grid-gap: 20px
+        grid-gap: 24px 30px
         grid-auto-rows: minmax(30px, min-content)
         align-items: start
     &__logo
@@ -84,6 +85,7 @@
         &:hover
             color: $primary
         &--icon
+            transition: 0.3s
             fill: #BDBDBD
             &:hover
                 fill: $primary
@@ -96,6 +98,8 @@
         height: 50px 
         margin-bottom: 15px
         flex-basis: 49%
+        font-size: 12px
+        line-height: 15px
         &:focus
             outline: 2px solid $primary
             outline-offset: 1px
@@ -108,6 +112,9 @@
         border: none
         flex-basis: 100%
         margin-bottom: 23px
+        font-size: 12px
+        line-height: 15px
+        resize: none
 
     &__button
         min-width: 160px
@@ -129,5 +136,21 @@
         line-height: 15px
         color: $footer-text-color
 
+
+    &__bottom
+        display: flex
+        align-items: center
+        &-ul
+            display: flex
+        &-item
+            list-style: none
+            margin-right: 12px
+            &:last-child
+                margin-right: 0
+        &-link
+            color: $light
+            font-size: 12px
+        &-pay
+            margin-top: 3px
 
 
