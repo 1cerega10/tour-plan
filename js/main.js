@@ -48,12 +48,24 @@ $(document).ready(function () {
   });
 
   let modalButton = $("[data-toggle=modal]");
+  let closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
-    function openModal() {
-      let modalOverlay = $(".modal__overlay");
-      let modaDialog = $(".modal__dialog");
-      modalOverlay.addClass(".modal__overlay--visible");
-      modalDialog.addClass(".modal__dialog--visible");
-    }
-    uflbyf
+  closeModalButton.on("click", cloesModal);
+
+  function openModal() {
+    let modalOverlay = $(".modal__overlay ");
+    let modalDialog = $(".modal__dialog");
+    modalOverlay.addClass("modal__overlay--visible");
+    modalDialog.addClass("modal__dialog--visible");
+  }
+  function cloesModal(event) {
+    
+    event.preventDefault();
+    let modalOverlay = $(".modal__overlay");
+    let modalDialog = $(".modal__dialog");
+    
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  }
+ 
 });
