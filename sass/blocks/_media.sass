@@ -24,7 +24,7 @@
     .navbar
         &-top
             padding-top: 30px
-            padding-bottom: 31px
+            padding-bottom: 30px
 
         &__search
             margin-left: 47px
@@ -56,7 +56,7 @@
             line-height: 18px
     .hotel
         padding-top: 17px 
-        padding-bottom: 58px
+        padding-bottom: 54px
         &-grid
             flex-direction: column
 
@@ -111,42 +111,96 @@
             max-width: 200px
 
     .footer
+        padding-top: 73px
         &__wrapper
-            grid-template-columns: repeat(6, 1fr)
-            grid-row-gap: 40px
+            
         &__input
             flex-basis: 49%
         &__logo
             grid-row: 1/2
-            grid-column: span 2
              
         &__social
             &-network
-              grid-row: 1/2  
-              grid-column: span 4
-              align-self: center
+                grid-row: 1/2
+                grid-column: 7/18
+                align-self: center
+              
         &__categories
             grid-row: 2/3
-            grid-column: span 2
+            grid-column: 1/6
+            padding: 0
+            
         &__legal
-            grid-column: span 2
+            grid-row: 2/3
+            grid-column: 13/19
+            padding: 0
         &__additional
-            grid-column: span 2
+            grid-row: 2/3
+            grid-column: 6/13
+            
         &__contact
             &-details
                 grid-row: 3
-                grid-column: span 5
+                grid-column: 1/18
+
+                
             &-form
-                grid-column: span 5
                 grid-row: 4
+                grid-column: 1/15
         &__bottom
             justify-content: space-between
             &-ul
                 margin: 0
                 padding: 0
   
-@media ( max-width:767px)
-    
+@media ( max-width:768px)
+    .offer
+        line-height: 11px
+    .hotel
+        &-name
+            line-height: 32px
+    .newsletter
+        padding: 98px 0 95px
+    .activites
+            padding: 70px 0 69px 0
+    .reviews
+        padding: 38px 0 70px
+    .footer
+        padding: 40px 0 46px
+        &-wrapper
+            grid-gap: 46px 30px
+        &__logo
+            &-img
+                width: 75%
+        &__title
+            
+            &--inlaine
+                margin-right: 46px
+            
+        &__social
+            &-network
+                padding-top: 36px
+                grid-column: 5/18
+                padding-left: 23px
+            &-links
+                margin-bottom: -6px
+        &__additional
+                
+        &__legal
+            
+        &__item
+           
+        &__contact
+            &-details
+                padding-top: 20px
+                    
+        &__text
+            font-size: 14px
+        &__input
+            flex-basis: 47%
+            &-left
+
+
 @media (max-width: 576px )
     .container,
     .newsletter-wrapper
