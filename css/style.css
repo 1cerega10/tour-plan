@@ -1599,7 +1599,7 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .container,
   .newsletter-wrapper {
     max-width: 576px;
@@ -1764,7 +1764,7 @@ a {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 320px) {
   .container {
     width: 87%;
   }
