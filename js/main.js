@@ -55,15 +55,29 @@ $(document).ready(function () {
   function openModal() {
     let modalOverlay = $(".modal__overlay ");
     let modalDialog = $(".modal__dialog");
+    let modalBody = $("body");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
-    
+    modalBody.addClass("overflow");
   }
   function cloesModal(event) {
     event.preventDefault();
     let modalOverlay = $(".modal__overlay");
     let modalDialog = $(".modal__dialog");
+    let modalBody = $("body");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    modalBody.removeClass("overflow");
+    $(document).on("keyup", function (event) {
+      if (event.keyCode == 27) {
+        modalOverlay.removeClass("modal__overlay--visible");
+        modalDialog.removeClass("modal__dialog--visible");
+        modalBody.removeClass("overflow");
+      }
+    });
+
+
   }
+
+
 });

@@ -152,6 +152,11 @@
             &-ul
                 margin: 0
                 padding: 0
+    .modal
+        
+        &__dialog
+            width: 90%
+            padding: 33px 50px
   
 @media ( max-width:768px)
     .offer
@@ -199,7 +204,9 @@
         &__input
             flex-basis: 47%
             &-left
-
+    .modal
+        &__dialog 
+            padding: 35px 40px
 
 @media (max-width: 576px )
     .container,
@@ -365,6 +372,29 @@
     .footer
         &__input
             flex-basis: 100%
+    .modal
+        &__dialog
+            padding: 10px 20px
+        &__input
+            font-size: 12px
+            line-height: 15px
+            margin-bottom: 10px
+        &__message
+            min-height: 50px
+            font-size: 12px
+            line-height: 15px
+            height: 150px
+        &__info
+            font-size: 12px
+            line-height: 15px
+            flex-basis: 100%
+            order: 1
+            color: $light
+            margin-bottom: 10px
+        &__button
+            order: 2
+    .input
+        height: 40px
     
 
 @media (max-width:320px)
