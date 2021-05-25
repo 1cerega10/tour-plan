@@ -10,15 +10,31 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
 
-// Формирование самого письма
-$title = "Новое обращение best tour plan";
+
+If (!empty($_POST['email']))
+{
+$title = "Новая подписка на новости Best Tour Plan";
+$body = "<b>Пользователь с Еmail:</b> $email<b>подписался на новостную рассылку Best Tour Plan</b>";
+}
+
+if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['message'])) {
+$title = "Новые обращение Best Tour Plan";
 $body = "
-<h2>новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>email:</b> $email<br>
-<b>телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+<h2>Новое обращение</h2>
+<b>Name:</b> $name
+
+<b>Phone:</b> $phone
+
+<b>Message:</b> $message
+
+";}
+if (!empty($_POST['name']) ){
+    $title = "доп информация Best Tour Plan";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Name:</b> $name
+    ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -26,7 +42,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-   // $mail->SMTPDebug = 2;
+    // 0$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
