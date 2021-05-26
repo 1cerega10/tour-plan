@@ -16,7 +16,7 @@ if  (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['email']
                 <h2>Запрос на дополнительную информацию о отеле</h2>
                 <b>Name:</b> $name <br>
                 <b>Phone:</b> $phone <br>
-                <b>Еmail:</b> $email <br>
+                <b>email:</b> $email <br>
                 <b>Message:</b> $message <br>
 
     ";}
@@ -45,7 +45,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -83,3 +83,7 @@ else {$result = "error";}
 
 // Отображение результата
 echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
+if ($result == "success") {
+  location('https://sergey-rudenko.ru/best-tour-plan/thankpage.html');
+}

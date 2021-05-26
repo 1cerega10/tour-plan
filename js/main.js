@@ -75,9 +75,5 @@ $(document).ready(function () {
         modalBody.removeClass("overflow");
       }
     });
-
-
   }
-
-
 });

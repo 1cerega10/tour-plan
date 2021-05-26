@@ -1458,6 +1458,32 @@ a {
   align-self: center;
 }
 
+.thank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0 100px;
+}
+
+.thank__title {
+  font-size: 40px;
+  line-height: 1px;
+  margin-bottom: 50px;
+}
+
+.thank .button {
+  margin: 0 auto;
+}
+
+.thank .button__thank {
+  font-size: 14px;
+}
+
+.thank .button .thank__link {
+  color: #fff;
+  padding: 15px 40px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1534,6 +1560,7 @@ a {
   .hotel .booking {
     width: 340px;
     padding: 28px 23px 30px 22px;
+    margin-right: 20px;
   }
   .slider {
     width: 100%;
@@ -1632,7 +1659,7 @@ a {
     padding: 0;
   }
   .modal__dialog {
-    width: 90%;
+    width: 80%;
     padding: 33px 50px;
   }
 }
@@ -1816,6 +1843,9 @@ a {
     margin-bottom: 37px;
     margin-left: 0;
   }
+  .newsletter .subscribe {
+    width: 300px;
+  }
   .reviews__title {
     max-width: 235px;
     font-size: 18px;
@@ -1844,14 +1874,58 @@ a {
     padding-top: 40px;
     padding-bottom: 60px;
   }
+  .activites-wrapper {
+    flex-direction: column;
+  }
   .card {
-    height: 220px;
-    width: 49%;
+    width: 100%;
+  }
+  .card:nth-last-child(-n+2) {
+    margin-bottom: 20px;
+  }
+  .card:nth-last-child(-n+1) {
+    margin-bottom: 0;
+  }
+  .card:nth-child(2n) {
+    order: 1;
+  }
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .footer__categories {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .footer__additional {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    grid-row: 4;
+    grid-column: 1;
+    padding: 0;
+  }
+  .footer__legal {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    grid-row: 7;
+    grid-column: 1;
   }
   .footer__input {
     flex-basis: 100%;
   }
   .modal__dialog {
+    width: 70%;
     padding: 10px 20px;
   }
   .modal__input {
@@ -1914,7 +1988,7 @@ a {
   .newsletter-title__strong {
     font-size: 31px;
   }
-  .subscribe {
+  .newsletter .subscribe {
     width: 100%;
   }
   .reviews__title {
@@ -1934,20 +2008,6 @@ a {
   .activites__title {
     font-size: 18px;
     margin-bottom: 33px;
-  }
-  .card {
-    flex-direction: column;
-    width: 100%;
-    height: 255px;
-  }
-  .card:nth-last-child(-n+2) {
-    margin-bottom: 20px;
-  }
-  .card:nth-last-child(-n+1) {
-    margin-bottom: 0;
-  }
-  .card:nth-child(2n) {
-    order: 1;
   }
   .footer {
     padding: 70px 0 20px;
@@ -1989,10 +2049,10 @@ a {
     grid-column: 1;
   }
   .footer__input {
-    flex-basis: 80%;
+    flex-basis: 100%;
   }
   .footer__message {
-    flex-basis: 80%;
+    flex-basis: 100%;
   }
   .footer__button {
     order: 2;
