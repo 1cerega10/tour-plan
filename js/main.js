@@ -76,4 +76,16 @@ $(document).ready(function () {
       }
     });
   }
+  document.querySelector('.modal-dialog__close').addEventListener('click', modalClose)
+  document.querySelector(".modal__overlay").addEventListener("click", modalClose);
+  document.addEventListener('keyup', e => {
+    if (e.code == 'Escape') modalClose()
+  });
+  function modalClose() {
+    document.querySelector(".modal__overlay").classList.remove('.modal__overlay--active');
+    document.querySelector(".modal-dialog").classList.remove(".modal-dialog--active");
+    document.querySelector('body').classList.remove('overflow-hedden');
+  }
+
+
 });

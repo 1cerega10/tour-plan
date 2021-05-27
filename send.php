@@ -85,5 +85,5 @@ else {$result = "error";}
 echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 
 if ($result == "success") {
-  location('https://sergey-rudenko.ru/best-tour-plan/thankpage.html');
+  header('location: https://sergey-rudenko.ru/best-tour-plan/thankpage.html');
 }
