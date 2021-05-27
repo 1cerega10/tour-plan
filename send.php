@@ -8,23 +8,13 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$email = $_POST['email'];
+$mail = $_POST['mail'];
 
-if  (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['email']) && !empty($_POST['message'])) {
-        $title = " доп инфа о отеле";
-        $body = "
-                <h2>Запрос на дополнительную информацию о отеле</h2>
-                <b>Name:</b> $name <br>
-                <b>Phone:</b> $phone <br>
-                <b>email:</b> $email <br>
-                <b>Message:</b> $message <br>
 
-    ";}
-
-if (!empty($_POST['email']))
+if (!empty($_POST['mail']))
 {
 $title = "Новая подписка на новости Best Tour Plan";
-$body = "<b>Пользователь с Еmail:</b> $email <b>подписался на новостную рассылку Best Tour Plan</b>";}
+$body = "<b>Пользователь с Еmail:</b> $mail <b>подписался на новостную рассылку Best Tour Plan</b>";}
 
 if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['message'])) {
 $title = "Новые обращение Best Tour Plan";
@@ -37,7 +27,16 @@ $body = "
 <b>Message:</b> $message
 
 ";}
+if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['mail']) && !empty($_POST['message'])) {
+    $title = "доп инфа о отеле";
+    $body = "
+            <h2>Запрос на дополнительную информацию о отеле</h2>
+            <b>Name:</b> $name <br>
+            <b>Phone:</b> $phone <br>
+            <b>mail:</b> $mail <br>
+            <b>Message:</b> $message <br>
 
+    ";}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
