@@ -212,60 +212,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <section class="packages" style="display: none">
-      <div class="container">
-        <h2 class="packages__title">Other Packages</h2>
-
-        <div class="packages-grid">
-          <div class="card__big">
-            <img src="./img/Packages/card-big.jpg" alt="" class="card__big-img" />
-
-            <div class="card__big-wrapper">
-              <div class="card__big-top">
-                <div class="card__big-stars stars">
-                  <img src="./img/Star.svg" alt="star" />
-                  <img src="./img/Star.svg" alt="star" />
-                  <img src="./img/Star.svg" alt="star" />
-                  <img src="./img/Star.svg" alt="star" />
-                  <img src="./img/Star.svg" alt="star" />
-                </div>
-                <h3 class="card__big-name">Hotel Blue Haven</h3>
-                <div class="card__big-description">
-                  Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat velit ea llamco do esse
-                  ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est
-                  fugiat velit ea ullamco do
-                </div>
-              </div>
-              <div class="card__big-bottom">
-                <div class="card__icons">
-                  <a href="#!" class="card__icon-address">
-                    <img src="./img/map-pin.svg" alt="" />
-                    1749 Wheeler Ridge Delaware
-                  </a>
-                  <span class="card__icon-guests">
-                    <img src="./img/user.svg" alt="" />
-                    2 x Guests
-                  </span>
-                  <span class="card__icon-room">
-                    <img src="./img/home.svg" alt="" />
-                    1 x Room
-                  </span>
-                </div>
-                <div class="card__sale">$&nbsp;10,500</div>
-                <div class="card__prise-wrapper">
-                  <div class="card__prise">$&nbsp;9,500</div>
-                  <button class="card__button-grid">Book Now</button>
-                </div>
-              </div>
-
-              <!-- /.card__big-wrapper -->
-              <!-- /.card__icons -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.packages -->
+ 
 
     <section class="newsletter" data-parallax="scroll" data-speed="0.7" data-image-src="./img/bg-newsletter.jpg">
       <div class="newsletter-wrapper">
@@ -273,7 +220,7 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form" >
           <input type="text" class="subscribe__input" required placeholder="Your mail address" name="mail" />
           <button type="submit" class="subscribe__button">Send</button>
         </form>
@@ -596,9 +543,9 @@
         </a>
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
-          <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name" />
-          <input type="text" class="input modal__input" required placeholder="Phone Number*" name="phone" />
-          <input type="text" class="input modal__input" required placeholder="mail*" name="mail" />
+          <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name" minlength="2"/>
+          <input type="tel" id="phone" class="input modal__input" required placeholder="+7(999) 99-99-999*" name="phone" />
+          <input type="email" class="input modal__input" required placeholder="mail*" name="mail" />
           <textarea type="text" class="modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
           <button type="submit" class="button modal__button">Send</button>
           <span class="modal__info">* Required Fields</span>
@@ -612,6 +559,7 @@
     <script src="./js/parallax.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
 
     <script src="./js/main.js"></script>
   </body>
