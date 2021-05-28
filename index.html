@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=136268a5-3dbd-48f9-82c0-854b36c853a0&lang=ru_RU" type="text/javascript"></script>
   </head>
@@ -280,7 +281,7 @@
     </section>
     <!-- /.newsletter -->
 
-    <section class="reviews">
+    <section class="reviews" data-aos="fade-right">
       <div class="container">
         <h2 class="reviews__title">What people think about us</h2>
         <div class="swiper-container reviews-slider">
@@ -394,25 +395,25 @@
       <div class="container">
         <h2 class="activites__title">Other Activities</h2>
         <div class="activites-wrapper">
-          <div class="card activites__card">
+          <div class="card activites__card" data-aos="fade-up" data-aos-delay="200">
             <img src="./img/activite/activite-1.jpg" alt="The curious corner of chamarel" class="card__img" />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activites__card">
+          <div class="card activites__card" data-aos="fade-up" data-aos-delay="400">
             <img src="./img/activite/activite-2.jpg" alt="Gymkhana club golf course" class="card__img" />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activites__card">
+          <div class="card activites__card" data-aos="fade-up" data-aos-delay="600">
             <img src="./img/activite/activite-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__img" />
             <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activites__card">
+          <div class="card activites__card" data-aos="fade-up" data-aos-delay="800">
             <img src="./img/activite/activite-4.jpg" alt="The blue marine discovery quest" class="card__img" />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <button data-toggle="modal" class="card__button">Book Now</button>
@@ -548,7 +549,7 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form form">
               <input type="text" class="input footer__input" required placeholder="Your Full Name*" name="name" />
               <input type="text" class="input footer__input footer__input-left" required placeholder="Phone Number*" name="phone" />
               <textarea type="text" class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
@@ -594,7 +595,7 @@
           </svg>
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name" />
           <input type="text" class="input modal__input" required placeholder="Phone Number*" name="phone" />
           <input type="text" class="input modal__input" required placeholder="mail*" name="mail" />
@@ -607,8 +608,10 @@
     </div>
     <!-- /.modal -->
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/parallax.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
 
     <script src="./js/main.js"></script>
   </body>

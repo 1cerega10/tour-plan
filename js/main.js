@@ -76,16 +76,32 @@ $(document).ready(function () {
       }
     });
   }
-  document.querySelector('.modal-dialog__close').addEventListener('click', modalClose)
-  document.querySelector(".modal__overlay").addEventListener("click", modalClose);
-  document.addEventListener('keyup', e => {
-    if (e.code == 'Escape') modalClose()
-  });
+ 
   function modalClose() {
-    document.querySelector(".modal__overlay").classList.remove('.modal__overlay--active');
+    document.querySelector(".modal__overlay").classList.remove(".modal__overlay--active");
     document.querySelector(".modal-dialog").classList.remove(".modal-dialog--active");
-    document.querySelector('body').classList.remove('overflow-hedden');
+    document.querySelector("body").classList.remove("overflow-hedden");
   }
+  // обработка форм
 
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "input__error",
+      messages: {
+        name: {
+          required: "This field is required",
+          minlength: "The name must be at least 2 letters long. You only entered 1 letter",
+        },
+        email: {
+          required: "This field is required",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "This field is required", 
+        },
+      },
+    });
+  });
 
+  AOS.init();
 });
