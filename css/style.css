@@ -2801,6 +2801,10 @@ a {
   outline-offset: 1px;
 }
 
+.footer__input::placeholder {
+  font-size: 12px;
+}
+
 .footer__message {
   height: 123px;
   background-color: #fff;
@@ -2813,6 +2817,10 @@ a {
   font-size: 12px;
   line-height: 15px;
   resize: none;
+}
+
+.footer__message::placeholder {
+  font-size: 12px;
 }
 
 .footer__info {
@@ -2930,6 +2938,10 @@ a {
   margin-top: 15px;
 }
 
+.modal__input::placeholder {
+  font-size: 12px;
+}
+
 .modal__message {
   width: 100%;
   min-height: 123px;
@@ -2937,6 +2949,10 @@ a {
   border-radius: 4px;
   resize: none;
   padding: 23px;
+}
+
+.modal__message::placeholder {
+  font-size: 12px;
 }
 
 .modal__info {
