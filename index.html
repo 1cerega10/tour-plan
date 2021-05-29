@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=136268a5-3dbd-48f9-82c0-854b36c853a0&lang=ru_RU" type="text/javascript"></script>
   </head>
@@ -212,7 +212,6 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
- 
 
     <section class="newsletter" data-parallax="scroll" data-speed="0.7" data-image-src="./img/bg-newsletter.jpg">
       <div class="newsletter-wrapper">
@@ -220,7 +219,7 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form" >
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
           <input type="text" class="subscribe__input" required placeholder="Your mail address" name="mail" />
           <button type="submit" class="subscribe__button">Send</button>
         </form>
@@ -262,7 +261,7 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img src="./img/avatar-about-2.jpg" alt="Photo: Megan Marcl " class="reviews-slider__avatar" />
+                  <img src="./img/avatar-about-2.png" alt="Photo: Megan Marcl " class="reviews-slider__avatar" />
                   <h3 class="reviews-slider__username">Megan Marcl</h3>
                   <span class="reviews-slider__date">Stayed 24 Mar, 2020</span>
                   <div class="reviews-slider__rating">
@@ -420,8 +419,8 @@
                 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V7.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 
                 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C16.344 
                 19.129 20 14.992 20 10.001 20 4.479 15.523.002 10.001.002z"
-                  /></svg
-              ></a>
+                  /></svg>
+              </a>
               <a href="#!" class="footer__link">
                 <svg width="21" height="21" class="footer__link--icon">
                   <path
@@ -497,8 +496,8 @@
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <input type="text" class="input footer__input" required placeholder="Your Full Name*" name="name" />
-              <input type="text" class="input footer__input footer__input-left" required placeholder="Phone Number*" name="phone" />
+              <input type="text" class="input footer__input" minlength="2" required placeholder="Your Full Name*" name="name" />
+              <input type="tel" class="input footer__input footer__input-left" required placeholder="+7 (999) 99-99-999*" name="phone" />
               <textarea type="text" class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -543,8 +542,8 @@
         </a>
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
-          <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name" minlength="2"/>
-          <input type="tel" id="phone" class="input modal__input" required placeholder="+7(999) 99-99-999*" name="phone" />
+          <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name" minlength="2" />
+          <input type="tel" class="input modal__input phone" required placeholder="+7 (999) 99-99-999*" name="phone" />
           <input type="email" class="input modal__input" required placeholder="mail*" name="mail" />
           <textarea type="text" class="modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
           <button type="submit" class="button modal__button">Send</button>
@@ -559,8 +558,7 @@
     <script src="./js/parallax.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/aos.js"></script>
-    <script src="./js/jquery.maskedinput.min.js"></script>
-
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

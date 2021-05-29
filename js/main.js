@@ -76,7 +76,7 @@ $(document).ready(function () {
       }
     });
   }
- 
+
   function modalClose() {
     document.querySelector(".modal__overlay").classList.remove(".modal__overlay--active");
     document.querySelector(".modal-dialog").classList.remove(".modal-dialog--active");
@@ -97,12 +97,12 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "This field is required", 
+          required: "This field is required",
         },
       },
     });
   });
 
   AOS.init();
-  $("#phone").mask("+7 (999) 99-99-99");
+  $("input[type='tel']").mask("+7 (999) 99-99-999");
 });
