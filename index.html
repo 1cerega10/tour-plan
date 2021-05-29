@@ -8,10 +8,8 @@
     <link rel="icon" href="./img/Best-tour-plan-ico.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/aos.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=136268a5-3dbd-48f9-82c0-854b36c853a0&lang=ru_RU" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=136268a5-3dbd-48f9-82c0-854b36c853a0&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <header class="navbar navbar--mobile_fixed">
@@ -419,7 +417,8 @@
                 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V7.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 
                 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C16.344 
                 19.129 20 14.992 20 10.001 20 4.479 15.523.002 10.001.002z"
-                  /></svg>
+                  />
+                </svg>
               </a>
               <a href="#!" class="footer__link">
                 <svg width="21" height="21" class="footer__link--icon">
@@ -496,8 +495,8 @@
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <input type="text" class="input footer__input" minlength="2" required placeholder="Your Full Name*" name="name" />
-              <input type="tel" class="input footer__input footer__input-left" required placeholder="+7 (999) 99-99-999*" name="phone" />
+              <div class="footer__input-group"><input type="text" class="input footer__input" minlength="2" required placeholder="Your Full Name*" name="name" /></div>
+              <div class="footer__input-group">  <input type="tel" class="input footer__input footer__input-left" required placeholder="+7 (999) 99-99-999*" name="phone" /></div>
               <textarea type="text" class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -553,6 +552,7 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/parallax.js"></script>

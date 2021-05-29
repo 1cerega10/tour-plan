@@ -218,8 +218,8 @@
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" required placeholder="Your Full Name*" name="name" />
-              <input type="text" class="input footer__input footer__input-left" required placeholder="Phone Number*" name="phone" />
+              <input type="text" class="input footer__input" required  minlength="2" placeholder="Your Full Name*" name="name" />
+              <input type="tel" class="input footer__input footer__input-left" required placeholder="Phone Number*" name="phone" />
               <textarea type="text" class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
