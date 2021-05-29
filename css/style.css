@@ -1568,7 +1568,7 @@ a {
   }
   .card {
     height: 256px;
-    width: 339px;
+    width: 48%;
   }
   .card__title {
     max-width: 200px;
@@ -1637,6 +1637,10 @@ a {
   }
   .reviews {
     padding: 38px 0 70px;
+  }
+  .card {
+    height: 256px;
+    width: 48%;
   }
   .footer {
     padding: 40px 0 46px;
