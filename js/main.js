@@ -92,9 +92,9 @@ $(document).ready(function () {
           required: "This field is required",
           minlength: "The name must be at least 2 letters long. You only entered 1 letter",
         },
-        email: {
+        mail: {
           required: "This field is required",
-          email: "Your email address must be in the format of name@domain.com",
+          mail: "Your email address must be in the format of name@domain.com",
         },
         phone: {
           required: "This field is required",
@@ -102,6 +102,18 @@ $(document).ready(function () {
       },
     });
   });
+  
+ $(".form-mail").each(function () {
+   $(this).validate({
+     errorClass: "mail__error",
+     messages: {
+       mail: {
+         required: "This field is required ",
+         mail: "Your email address must be in the format of name@domain.com",
+       },
+     },
+   });
+ });
 
   AOS.init();
   $("input[type='tel']").mask("+7 (999) 99-99-999");

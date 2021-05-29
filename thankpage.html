@@ -86,13 +86,13 @@
     </header>
     <!-- /.navbar -->
 
+    <div class="thank">
+      <h1 class="thank__title">Thank You</h1>
+      <button class="button button__thank">
+        <a href="./index.html" class="thank__link">to home</a>
+      </button>
+    </div>
 
-<div class="thank">
-    <h1 class="thank__title"> Thank You</h1>
-    <button class="button button__thank">
-        <a href="./index.html" class="thank__link">to home</a></button>
-</div>
-  
     <section class="footer">
       <div class="container">
         <div class="footer-wrapper">
@@ -141,8 +141,9 @@
                 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V7.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 
                 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C16.344 
                 19.129 20 14.992 20 10.001 20 4.479 15.523.002 10.001.002z"
-                  /></svg>
-            </a>
+                  />
+                </svg>
+              </a>
               <a href="#!" class="footer__link">
                 <svg width="21" height="21" class="footer__link--icon">
                   <path
@@ -217,9 +218,14 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" required  minlength="2" placeholder="Your Full Name*" name="name" />
-              <input type="tel" class="input footer__input footer__input-left" required placeholder="Phone Number*" name="phone" />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input" required minlength="2" placeholder="Your Full Name*" name="name" />
+              </div>
+
+              <div class="footer__input-group">
+                <input type="tel" class="input footer__input footer__input-left" required placeholder="+7 (999) 99-99-999*" name="phone" />
+              </div>
               <textarea type="text" class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -248,7 +254,6 @@
     </section>
     <!-- /.footer -->
 
-    
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/parallax.js"></script>
