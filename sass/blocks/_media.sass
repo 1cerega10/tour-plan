@@ -239,14 +239,14 @@
             justify-content: center
         &__buttom
             position: fixed
-            top: 67px
+            top: 70px
             right: -100%
             bottom: 0
             padding-top: 30px 
             transition: 0.5s 
             &--active
                 display: block
-                top: 67px
+                top: 70px
                 overflow: auto
                 right: 0
                 width: 100%
@@ -412,17 +412,21 @@
                 grid-column: 1
             &-form
                 grid-row: 7
-                grid-column: 1
-        &__input
-                flex-basis: 100%
+                grid-column: 1 
+                
         &__bottom
             margin-bottom: 10px
             &-pay
                 top: 10px
                 left: 0
+
+    .footer
+        &__input
+            &-group
+                flex-basis: 100%
     .modal
         &__dialog 
-            width: 70%
+            width: 90%
             padding: 10px 20px
         &__input
             font-size: 10px

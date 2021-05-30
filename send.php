@@ -11,6 +11,8 @@ $message = $_POST['message'];
 $mail = $_POST['mail'];
 
 
+$message = (!empty($_POST['message']) && isset($_POST['message'])) ? $_POST['message'] : '';
+
 if (!empty($_POST['mail']))
 {
 $title = "Новая подписка на новости Best Tour Plan";
@@ -38,11 +40,7 @@ if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['mail']) 
             <b>Message:</b> $message <br>
 
     ";}
-if (!empty($_POST['message']) && isset($_POST['message'])){
-$message = $_POST['message'];
-} else {
-$message = '';
-}
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
