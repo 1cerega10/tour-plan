@@ -6,6 +6,10 @@ body
     color: $text-color
     background-color: $secondary
 
+@mixin hover
+  @media (min-width: 992px)
+    &:not([disabled]):hover
+      @content
 .container
     max-width: 1110px
     margin: 0 auto
@@ -33,7 +37,8 @@ a
     overflow: hidden
     text-overflow: ellipsis
     transition: 0.3s
-    &:hover
+    cursor: pointer
+    +hover
         background-color: #ac0927
 .input
     background-color: #fff
@@ -53,7 +58,6 @@ a
 .input
     &__error
         color: $primary
-        margin-top: 3px
         font-size: 12px
         
 
@@ -61,3 +65,4 @@ a
     &__error
         position: absolute
         color: $primary
+    

@@ -87,7 +87,7 @@
             fill-opacity: 0.8
             transition: 0.2s
 
-            &:hover
+            +hover
                 fill: $primary
             &--next
                 right: 18px
@@ -139,6 +139,7 @@
     padding: 28px
 
     &__info
+        font-family: Nunito
         display: flex
         justify-content: space-between
         margin-bottom: 5px
@@ -182,6 +183,7 @@
         margin-bottom: 19px
 
     &__heading
+        font-family: Nunito
         font-style: normal
         font-weight: 600
         font-size: 18px
@@ -197,15 +199,17 @@
         font-size: 18px
         line-height: 25px
         transition: 0.3s
-        &:hover
+        +hover
             color: $primary
 
     &__num
         margin-left: 8px
+        font-family: Nunito
 
     &__button
         width: 100%
         min-height: 45px
+        font-family: Nunito
         font-weight: 600
         font-size: 14px
         line-height: 19px

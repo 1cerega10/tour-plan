@@ -19,14 +19,6 @@ $(document).ready(function () {
     autoHeight: true,
   });
 
-  ymaps.ready(init);
-  function init() {
-    let myMap = new ymaps.Map("map", {
-      center: [7.839483397658993, 98.30119763555001],
-      zoom: 15,
-    });
-  }
-
   const reviewsSlider = new Swiper(".reviews-slider", {
     // Optional parameters
     loop: true,
@@ -102,19 +94,45 @@ $(document).ready(function () {
       },
     });
   });
-  
- $(".form-mail").each(function () {
-   $(this).validate({
-     errorClass: "mail__error",
-     messages: {
-       mail: {
-         required: "This field is required ",
-         mail: "Your email address must be in the format of name@domain.com",
-       },
-     },
-   });
- });
+
+  $(".form-mail").each(function () {
+    $(this).validate({
+      errorClass: "mail__error",
+      messages: {
+        mail: {
+          required: "This field is required ",
+          mail: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
 
   AOS.init();
   $("input[type='tel']").mask("+7 (999) 99-99-999");
+  
+  
+
+  const hotelMap = document.querySelector("#map");
+  if (hotelMap) {
+    function init() {
+      let myMap = new ymaps.Map("map", {
+        center: [7.839483397658993, 98.30119763555001],
+        zoom: 15,
+      });
+    }
+
+    let isNeedToLoadHotelMap = true;
+
+    const initYandexMap = () => {
+      if (isNeedToLoadHotelMap) {
+        isNeedToLoadHotelMap = false;
+        ymaps.ready(init);
+      }
+    };
+
+    hotelMap.addEventListener("click", initYandexMap, { passive: true });
+    hotelMap.addEventListener("touchmove", initYandexMap, { passive: true });
+    hotelMap.addEventListener("touchstart", initYandexMap, { passive: true });
+    hotelMap.addEventListener("mouseover", initYandexMap, { passive: true });
+  }
 });
