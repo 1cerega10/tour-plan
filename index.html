@@ -219,7 +219,7 @@
         </h2>
         <form action="send.php" method="POST" class=" subscribe newsletter__subscribe form-mail">
           <input type="email" class="subscribe__input" required placeholder="Your mail address" name="mail" />
-          <div class="subscribe__input-error mail__error"></div>
+          <div class="subscribe__input-error mail-error"></div>
           <button type="submit" class="subscribe__button">Send</button>
         </form>
       </div>
@@ -374,7 +374,7 @@
       <div class="container">
         <div class="footer-wrapper">
           <a class="logo footer__logo" href="#"
-            ><img class="footer__logo-img" src="./img/logo-vertical.svg" alt="Logo: Best tour plane" class=""
+            ><img class="footer__logo-img" src="./img/logo-vertical.svg" alt="Logo: Best tour plane"
           /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -469,13 +469,13 @@
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img class="footer__icon" src="./img/map-teg.svg" alt="Icon: Map" href="#!" />
+                  <img class="footer__icon" src="./img/map-teg.svg" alt="Icon: Map" />
                 </div>
                 <a href="#!" class="footer__icon-link">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</a>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img class="footer__icon" src="./img/phone.svg" alt="Icon: Phone" href="#!" />
+                  <img class="footer__icon" src="./img/phone.svg" alt="Icon: Phone" />
                 </div>
 
                 <div class="footer__icon__links">
@@ -493,7 +493,7 @@
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img class="footer__icon" src="./img/email.svg" alt="Icon: email" href="#" />
+                  <img class="footer__icon" src="./img/email.svg" alt="Icon: email" />
                 </div>
                 <a href="#!" class="footer__icon-link">cherly.lawson@example.com</a>
               </li>
@@ -504,7 +504,7 @@
             <h3 class="footer__title footer__title-last">Send us a message</h3>
             <form action="./send.php" method="POST" class="footer__form form">
               <div class="footer__input-group"><input type="text" class="input footer__input" minlength="2" required placeholder="Your Full Name*" name="name" /></div>
-              <div class="footer__input-group">  <input type="tel" class="input footer__input footer__input-left" minlength="10" required placeholder="+7 (999) 99-99-999*" name="phone" /></div>
+              <div class="footer__input-group">  <input type="tel" class="input footer__input footer__input-left" minlength="18" required placeholder="+7 (999) 99-99-999*" name="phone" /></div>
               <textarea  class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -550,9 +550,9 @@
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
           <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name" minlength="2" />
-          <input type="tel" class="input modal__input phone" required placeholder="+7 (999) 99-99-999*" name="phone" minlength="10" />
+          <input type="tel" class="input modal__input phone" required placeholder="+7 (999) 99-99-999*" name="phone" minlength="18" />
           <input type="email" class="input modal__input" required placeholder="mail*" name="mail" />
-          <textarea type="text" class="modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+          <textarea class="modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
           <button type="submit" class="button modal__button">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>

@@ -1939,6 +1939,7 @@ a {
 .input__error {
   color: #ec1f46;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .mail-error {
@@ -2868,6 +2869,7 @@ a {
   font-size: 12px;
   line-height: 15px;
   color: #000000;
+  margin-bottom: 4px;
 }
 
 .footer__input-group:focus {
@@ -3057,7 +3059,7 @@ a {
   margin-bottom: 50px;
 }
 
-.thank .button__thank {
+.thank .button-thank {
   width: 160px;
   height: 50px;
   font-weight: bold;
@@ -3075,7 +3077,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  .thank .button__thank:not([disabled]):hover {
+  .thank .button-thank:not([disabled]):hover {
     background-color: #ac0927;
   }
 }
@@ -3316,6 +3318,9 @@ a {
   .modal__dialog {
     padding: 35px 40px;
   }
+  .input__error {
+    margin-bottom: 2px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3551,6 +3556,10 @@ a {
   }
   .footer__input-group {
     flex-basis: 100%;
+    margin-bottom: 6px;
+  }
+  .input__error {
+    margin-bottom: 3px;
   }
   .modal__dialog {
     width: 90%;
