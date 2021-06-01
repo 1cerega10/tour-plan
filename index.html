@@ -469,21 +469,21 @@
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img class="footer__icon" src="./img/map-teg.svg" alt="Icon: Map" href="#" />
+                  <img class="footer__icon" src="./img/map-teg.svg" alt="Icon: Map" href="#!" />
                 </div>
                 <a href="#!" class="footer__icon-link">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</a>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
-                  <img class="footer__icon" src="./img/phone.svg" alt="Icon: Phone" href="#" />
+                  <img class="footer__icon" src="./img/phone.svg" alt="Icon: Phone" href="#!" />
                 </div>
 
                 <div class="footer__icon__links">
-                  <span class="footer__icon-link">Tel (business hours) :<a href="tel:2691500" class="footer__icon-link">269 1500</a></span>
-                  <span class="footer__icon-link">Tel (hotline) Monday - Saturday:
+                  <span class="footer__icon">Tel (business hours) :<a href="tel:2691500" class="footer__icon-link">269 1500</a></span>
+                  <span class="footer__icon">Tel (hotline) Monday - Saturday:
                     <a href="tel:52566138" class="footer__icon-link"> 52-56-61-38</a> (08:00 am – 20:00 pm)
                   </span>
-                  <span class="footer__icon-link">Tel (hotline) Sunday: 
+                  <span class="footer__icon">Tel (hotline) Sunday: 
                     <a href="tel:52566138" class="footer__icon-link">52-56-61-38</a> (08:00 am – 14:00 pm)
                   </span>
                   
@@ -504,8 +504,8 @@
             <h3 class="footer__title footer__title-last">Send us a message</h3>
             <form action="./send.php" method="POST" class="footer__form form">
               <div class="footer__input-group"><input type="text" class="input footer__input" minlength="2" required placeholder="Your Full Name*" name="name" /></div>
-              <div class="footer__input-group">  <input type="tel" class="input footer__input footer__input-left" required placeholder="+7 (999) 99-99-999*" name="phone" /></div>
-              <textarea type="text" class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+              <div class="footer__input-group">  <input type="tel" class="input footer__input footer__input-left" minlength="10" required placeholder="+7 (999) 99-99-999*" name="phone" /></div>
+              <textarea  class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
@@ -550,7 +550,7 @@
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
           <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name" minlength="2" />
-          <input type="tel" class="input modal__input phone" required placeholder="+7 (999) 99-99-999*" name="phone" />
+          <input type="tel" class="input modal__input phone" required placeholder="+7 (999) 99-99-999*" name="phone" minlength="10" />
           <input type="email" class="input modal__input" required placeholder="mail*" name="mail" />
           <textarea type="text" class="modal__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
           <button type="submit" class="button modal__button">Send</button>

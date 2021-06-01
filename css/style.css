@@ -1941,7 +1941,7 @@ a {
   font-size: 12px;
 }
 
-.mail__error {
+.mail-error {
   position: absolute;
   color: #ec1f46;
 }
@@ -2382,7 +2382,7 @@ a {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #686868;
+  background-image: url(./../img/map-bg.jpg);
 }
 
 .newsletter {
@@ -2417,7 +2417,7 @@ a {
   font-size: 24px;
   line-height: 30px;
   margin: 0;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 
 .newsletter-title__strong {
@@ -3469,6 +3469,9 @@ a {
   }
   .reviews-slider__item::after, .reviews-slider__item::before {
     display: none;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
   .reviews-slider__button {
     top: 32px;

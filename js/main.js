@@ -90,6 +90,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "This field is required",
+          minlength: "The name must be at least 10 letters long.",
         },
       },
     });
@@ -97,7 +98,7 @@ $(document).ready(function () {
 
   $(".form-mail").each(function () {
     $(this).validate({
-      errorClass: "mail__error",
+      errorClass: "mail-error",
       messages: {
         mail: {
           required: "This field is required ",
